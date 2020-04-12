@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: TimesNewRoman;
+}
+
+/* Style tab links */
+.tablink {
+#Search {background-color: #BBBAB5;}
+#Sustain {background-color: #CDE4C6;}
+#Comments {background-color: #D9E2BC;}
+#About {background-color: #F7FAC1;}
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #D9EED9;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #5D655D;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Search {background-color: #E2F0CB;}
+#Sustain {background-color: #BEEBE9;}
+#Comments {background-color: #E2F0CB;}
+#About {background-color: #BEEBE9;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Search', this, '#F6EEB0')">Search</button>
+<button class="tablink" onclick="openPage('Sustain', this, '#F6EEB0')" id="defaultOpen">Sustain</button>
+<button class="tablink" onclick="openPage('Comments', this, '#F6EEB0')">Comments</button>
+<button class="tablink" onclick="openPage('About', this, '#F6EEB0')">About</button>
+
+<div id="Search" class="tabcontent">
+  <h1>Search</h1>
+  <p><!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: white;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body>
+<img border="0" alt="W3Schools" src="https://i.imgur.com/Sf1e88K.jpg" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/FB8IxT8.png" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/pw7yM3j.png" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/YCzske5.png" width="150" height="150">
+<h2>Eco-Friendly Products</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" title="Type in a name">
+
+<ul id="myUL">
+ 
+  <li><a href="https://ethique.com/" target="_blank">Ethique (Shampoo, Soap, Conditioner)</a></li>
+
+  <li><a href="https://www.friendlysoap.co.uk/" target= "_blank">Friendly Soap (Shampoo, Soap, Conditioner)</a></li>
+  <li><a href="https://www.soapnuts.co.uk/" target= "_blank">Soap Nuts (Shampoo, Soap, Conditioner)</a></li>
+
+  <li><a href="https://www.seaandcleansoap.com/" target= "_blank">Sea and Clean Soap (Shampoo, Soap, Conditioner)</a></li>
+  <li><a href="https://www.100percentpure.com/"target= "_blank">100 Percent Pure (Shampoo Soap, Conditioner)</a></li>
+  <li><a href="https://www.kleankanteen.com/" target= "_blank">Klean Kanteen (Water bottles)</a></li>
+  <li><a href="www.swell.com/" target="_blank">S'Well (Water bottles)</a></li>
+  <li><a href="https://waterbobble.com/" target= "_blank">Bobble (Water bottles)</a></li>
+  <li><a href="https://www.24bottles.com/" target= "_blank">24bottles (Water bottles)</a></li>
+  <li><a href="https://drinkdstil.com/" target= "_blank">d.Stil (Water bottles)</a></li>
+  <li><a href="www.publicgoods.com/" target= "_blank">Public Goods (Menstrual products)</a></li>
+  <li><a href="https://lunapads.com/" target= "_blank">Lunapads (Menstrual products)</a></li>
+  <li><a href="https://www.organyc-online.com/" target= "_blank">Organyc (Menstrual products)</a></li>
+  <li><a href="www.mylola.com/" target= "_blank">Lola (Menstrual products)</a></li>
+  <li><a href="https://gladrags.com/" target= "_blank">Gladrags (Menstrual products)</a></li>
+  <li><a href="https://remarkable.com/" target= "_blank">Remarkable (Stationery)</a></li>
+<li><a href="https://decomposition.com/" target= "_blank">Decomposition (Stationery)</a></li>
+<li><a href="https://www.maydesigns.com/" target= "_blank">May Designs (Stationery)</a></li>
+<li><a href="https://www.antonymcosmetics.com/" target= "_blank">Antonym Cosmetics (Cosmetics)</a></li>
+<li><a href="https://www.rmsbeauty.com/" target= "_blank">RMS Beauty (Cosmetics)</a></li>
+<li><a href="https://kjaerweis.com/" target= "_blank">Kjaer Weis (Cosmetics)</a></li>
+<li><a href="https://solgaard.co/" target= "_blank">Solgaard (Backbacks, Bags)</a></li>
+<li><a href="https://incase.com/" target= "_blank">Incase (Backbacks, Bags)</a></li>
+<li><a href="https://https://www.ecobags.com/" target= "_blank">Ecobags (Totes, Bags)</a></li>
+<li><a href="https://www.patagonia.com/" target= "_blank">Patagonia (Apparel)</a></li>
+<li><a href="https://www.toms.com/" target= "_blank">Toms (Apparel)</a></li>
+<li><a href="https://www.boyish.com/" target= "_blank">Boyish Jeans (Apparel)</a></li>
+<li><a href="https://www.wearpact.com/" target= "_blank">Pact (Apparel)</a></li>
+<li><a href="https://us.kotn.com/" target= "_blank">KOTN (Apparel)</a></li>
+<li><a href="https://ecotensil.com/" target= "_blank">EcoTensil (Cutlery)</a></li>
+<li><a href="https://www.napkins.com/" target= "_blank">Napkins.com (Cutlery)</a></li>
+<li><a href="https://www.bambuhome.com/" target= "_blank">Bambu (Cutlery)</a></li>
+<li><a href="https://www.ecoproducts.com/" target= "_blank">EcoProducts (Cutlery)</a></li>
+<li><a href="https://greenpaperproducts.com/" target= "_blank">Green Paper Products (Cutlery)</a></li>
+</ul>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+</div>
+
+<div id="Sustain" class="tabcontent">
+  <h2>Click on the images and get inspired by different eco-friendly ideas!</h2>
+  
+ <a href="https://www.buzzfeed.com/whitneyjefferson/best-eco-friendly-gifts-to-give-this-year" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/Sf1e88K.jpg" width="300" height="300">
+   <img align="|right|top|">  
+
+ 
+     <a href="https://www.youtube.com/watch?v=jT43USHegEs" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/YCzske5.png" width="300" height="300">
+<img align="|right|top|"> 
+
+
+   <a href="https://hbswk.hbs.edu/Pages/browse.aspx?HBSTopic=Environmental%20Sustainability" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/FB8IxT8.png" width="300" height="300">
+<img align="|right|top|"> 
+
+
+ <a href="https://www.greenbiz.com/blog/2009/05/14/21-places-look-green-volunteering-opportunities" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/YQmmE7K.png" width="300" height="300">
+
+
+<a href="https://www.blog2print.com/7-tips-for-sprouting-a-bountiful-garden-blog/" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/dihlQfY.png" width="300" height="300">
+
+
+<a href="https://www.energycentral.com/c/ec/importance-eco-friendly-environment/" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/7onVyec.png" width="300" height="300">
+
+<a href="https://www.wheelsforwishes.org/news/live-a-more-eco-friendly-lifestyle
+/" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/md7qkx0.png" width="300" height="300">
+
+<a href="https://greatist.com/happiness/eco-friendly-tips-save-cash
+/" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/jA2kbN4.png" width="300" height="300">
+
+<a href="https://oceanservice.noaa.gov/hazards/marinedebris/plastics-in-the-ocean.html
+/" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/js9kZz2.png" width="300" height="300">
+
+
+
+<a href="https://www.conserve-energy-future.com/15-easy-ways-to-become-environmentally-friendly.php
+/" target= "_blank"> 
+<img border="0" alt="W3Schools" src="https://i.imgur.com/pw7yM3j.png" width="300" height="300">
+</a>
+</p>
+</body>
+</html>
+   
+   
+  
+
+</body>
+</html></p> 
+</div></p> 
+</div>
+
+<div id="Comments" class="tabcontent">
+  <h1>Comments</h1>
+   <p>
+<img border="0" alt="W3Schools" src="https://i.imgur.com/YQmmE7K.png" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/7onVyec.png" width="150" height="150"> </p>
+  <div id="respond">
+
+  <h3>Feel free to leave a Comment!</h3>
+
+  <form method="POST" id="commentform">
+
+    <label for="comment_author" class="required">Your name:</label>
+    
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+    <label for="email" class="required">Your email:</label>
+    <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+    <br> </br>
+    
+    <label for "rating" class="required">How would you rate this product on a scale of 1-10?</label>
+    <input type="rating" name="rating" id="rating" tabindex="5" required="required">
+           
+    <br> </br>
+    <p><label for="comment" class="required">Your message:</label></p>
+    <textarea name="comment" id="comment" rows="10" tabindex="7"  required="required"></textarea>
+
+   <p> <input type="hidden" name="comment" value="1" id="" />
+    <input name="submit" type="submit" value="Submit comment" /> </p>
+
+</form>
+
+</div>
+    
+ 
+
+<p>  Leave a comment about our site or a review! </p>
+  </p>
+</div>
+
+
+<div id="About" class="tabcontent">
+  <h1>About</h1>
+  <img border="0" alt="W3Schools" src="https://i.imgur.com/dihlQfY.png" width="150" height="150">
+  <img border="0" alt="W3Schools" src="https://i.imgur.com/md7qkx0.png" width="150" height="150">
+  <img border="0" alt="W3Schools" src="https://i.imgur.com/jA2kbN4.png" width="150" height="150">
+  <img border="0" alt="W3Schools" src="https://i.imgur.com/js9kZz2.png" width="150" height="150">
+  <p> 
+   <div class="left">
+    <h2>Why sustainable?</h2>
+    <p>By buying from eco friendly companies, we are helping out the environment and paving the road to a greener future. It also reduces the carbon footprints we carry on the ecosystem and maintain habitats for important animals in our life.</p>
+    <h2>Is the price worth it?</h2>
+    <p>These products, though on the expensive end, are well worth the price! They are more durable and are for a good cause.</p>
+    <h2>Our Goals</h2>
+<p>We are a team of high school sophomores from the Bay Area devoted to preserving the environment. We strive to make a larger impact on the world, and aim to maintain the world’s natural resources and keep them lasting for future generations, which can only be possible by being more conscious about the environment and how we as a society treat it. Through this website we want to deliver enviromentally conscious alternatives to people anywhere, anytime to help the environment.</p>
+
+<h2>What we did</h2>
+<p>We decided that the best way to save the environment is to do it together. That is why we decided to create a project that anyone in the can use. To inspire more people to join this movement, we decided to focus our project starting one small step at a time. The items in our search bar are the daily items that everyone uses without realizing that there are eco-friendly alternatives. In order to make our idea more accessible to people, we decided to make it a website such that they can easily access it on any device, whether its a computer, phone, or tablet. We give people access to a directory of environment friendly alternatives to common items such that they can incorporate these into their daily activities.</p>
+
+<h2>Meet the Creators</h2>
+
+
+<img border="0" alt="W3Schools" src="https://i.imgur.com/Q7uWjhk.jpg" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/WLGBB9i.jpg" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/0AiLhUF.jpg" width="150" height="150">
+<img border="0" alt="W3Schools" src="https://i.imgur.com/nubpwgk.jpg" width="150" height="150">
+
+<p>Lena Kim, Megan Jacob, Serena Yang, and Ragalina Palaka</p>
+
+
+</div></p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
+
+
+
+</div></p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
