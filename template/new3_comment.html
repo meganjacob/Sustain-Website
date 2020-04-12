@@ -1,0 +1,28 @@
+<div id="respond">
+
+  <h3>Feel free to leave a Comment!</h3>
+
+  <form method="POST" id="commentform">
+
+    <label for="comment_author" class="required">Your name</label>
+    
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+
+    <label for="email" class="required">Your email</label>
+    <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+    <br> </br>
+    
+    <label for "rating" class="required">How would you rate this product on a scale of 1-10?</label>
+    <input type="rating" name="rating" id="rating" tabindex="5" required="required">
+           
+    <br> </br>
+    <label for="comment" class="required">Your message</label>
+    <textarea name="comment" id="comment" rows="10" tabindex="7"  required="required"></textarea>
+
+    <input type="hidden" name="comment" value="1" id="" />
+    <input name="submit" type="submit" value="Submit comment" />
+
+</form>
+
+</div>
+    
